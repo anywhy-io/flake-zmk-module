@@ -108,7 +108,6 @@
 
         base {
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5            &kp N6  &kp N7     &kp N8     &kp N9    &kp N0     &kp MINUS
 &kp ENTER  &kp Q   &kp W     &kp E     &kp R      &kp T             &kp Y   &kp U      &kp I      &kp O     &kp P      &kp BSPC
 &kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G             &kp H   &kp J      &kp K      &kp L     &kp SEMI   &kp APOS
 &kp LBKT   &kp Z   &kp X     &kp C     &kp V      &kp B             &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH   &kp RBKT
@@ -118,7 +117,6 @@
 
         num {
             bindings = <
-&none  &none     &none          &none      &none      &none            &none      &none   &none   &none   &none      &none
 &none  &kp ESC   &kp BACKSPACE  &kp TAB    &kp ENTER  &kp DEL          &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS  &none
 &none  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp LBKT         &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0     &none
 &none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp RBKT         &kp SQT    &kp N1  &kp N2  &kp N3  &kp BSLH   &none
@@ -128,12 +126,17 @@
 
         fn {
             bindings = <
-&none  &none    &none   &none   &none   &none                  &none  &none       &none         &none         &none         &none
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &soft_off              &bt2   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP  &none
 &none  &kp F10  &kp F4  &kp F5  &kp F6  &kp CAPS               &bt1   &kp RSHFT   &kp RCTRL     &kp RALT      &kp RGUI      &none
 &none  &kp F11  &kp F1  &kp F2  &kp F3  &studio_unlock         &bt0   &kp C_PP    &kp C_PREV    &kp C_NEXT    &kp C_BRI_DN  &none
                 &trans  &trans  &trans  &trans          &none  &none  &trans      &trans        &trans        &trans
             >;
         };
+
+        extra1 { status = "reserved"; };
+        extra2 { status = "reserved"; };
+        extra3 { status = "reserved"; };
+        extra4 { status = "reserved"; };
+        extra5 { status = "reserved"; };
     };
 };
