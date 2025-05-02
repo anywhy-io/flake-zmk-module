@@ -140,28 +140,28 @@
 
         base {
             bindings = <
-  &kp B     &kp L     &kp D      &kp W        &kp V     &kp SEMI     &kp F                &kp O      &kp U     &kp J
-  &kp N     &kp R     &kp T      &kp S        &kp G     &kp Y        &kp H                &kp A      &kp E     &kp I
-  &kp Q     &kp X     &kp M      &kp C        &kp Z     &kp K        &kp P                &kp COMMA  &kp DOT   &kp FSLH
-  &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &gresc    &lt 2 ENTER  &mt LSHFT BACKSPACE  &kp LGUI   &kp LALT  &kp LCTRL
+  &kp B     &kp L     &kp D      &kp W        &kp V     &kp SEMI               &kp F            &kp O      &kp U     &kp J
+  &kp N     &kp R     &kp T      &kp S        &kp G     &kp Y                  &kp H            &kp A      &kp E     &kp I
+  &kp Q     &kp X     &kp M      &kp C        &kp Z     &kp K                  &kp P            &kp COMMA  &kp DOT   &kp FSLH
+  &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &gresc    &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &kp LGUI   &kp LALT  &kp LCTRL
             >;
         };
 
         num {
             bindings = <
-  &kp ESC     &kp BACKSPACE  &kp TAB     &kp ENTER    &kp DEL     &kp SEMI   &kp N7           &kp N8  &kp N9  &kp MINUS
-  &kp LGUI    &kp LALT       &kp LCTRL   &kp LSHFT    &kp LBKT    &kp EQUAL  &kp N4           &kp N5  &kp N6  &kp N0
-  &kp K_UNDO  &kp K_CUT      &kp K_COPY  &kp K_PASTE  &kp RBKT    &kp GRAVE  &kp N1           &kp N2  &kp N3  &kp BSLH
-  &trans      &trans         &trans      &trans       &none       &kp ENTER  &kp RIGHT_SHIFT  &trans  &trans  &trans
+  &kp ESC     &kp BACKSPACE  &kp TAB     &kp ENTER    &kp DEL     &kp SINGLE_QUOTE  &kp N7           &kp N8  &kp N9  &kp MINUS
+  &kp LGUI    &kp LALT       &kp LCTRL   &kp LSHFT    &kp LBKT    &kp EQUAL         &kp N4           &kp N5  &kp N6  &kp N0
+  &kp K_UNDO  &kp K_CUT      &kp K_COPY  &kp K_PASTE  &kp RBKT    &kp GRAVE         &kp N1           &kp N2  &kp N3  &kp BSLH
+  &trans      &trans         &trans      &trans       &none       &kp ENTER         &kp RIGHT_SHIFT  &trans  &trans  &trans
             >;
         };
 
         fn {
             bindings = <
-  &kp LESS_THAN   &kp GT           &kp LEFT_BRACKET      &kp RBKT               &soft_off         &bt2   &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP  &kp K_LOCK
-  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &caps_word        &bt1   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-  &kp UNDERSCORE  &kp AMPERSAND    &eqeq                 &arrow                 &studio_unlock    &bt0   &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END
-  &trans          &trans           &trans                &kp SPACE              &none             &none  &trans          &trans          &trans        &trans
+  &kp EXCLAMATION   &kp UNDERSCORE     &kp LESS_THAN         &kp GREATER_THAN       &soft_off         &bt2   &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP  &kp K_LOCK
+  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &caps_word        &bt1   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+  &kp PIPE          &kp AMPERSAND      &eqeq                 &arrow                 &studio_unlock    &bt0   &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END
+  &trans            &trans             &trans                &kp SPACE              &kp LEFT_GUI      &none  &trans          &trans          &trans        &trans
             >;
         };
     };
