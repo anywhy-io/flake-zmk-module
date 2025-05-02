@@ -133,6 +133,27 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+	omt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+	    quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
+
+	omt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+	    quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
+
     };
 
     keymap {
@@ -143,7 +164,7 @@
   &kp B     &kp L     &kp D      &kp W        &kp V     &kp SEMI               &kp F            &kp O      &kp U     &kp J
   &kp N     &kp R     &kp T      &kp S        &kp G     &kp Y                  &kp H            &kp A      &kp E     &kp I
   &kp Q     &kp X     &kp M      &kp C        &kp Z     &kp K                  &kp P            &kp COMMA  &kp DOT   &kp FSLH
-  &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &gresc    &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE  &kp LGUI   &kp LALT  &kp LCTRL
+  &kp LGUI  &kp LALT  &kp LCTRL  &olt 1 SPACE  &gresc    &omt RIGHT_SHIFT ENTER  &olt 2 BACKSPACE  &kp LGUI   &kp LALT  &kp LCTRL
             >;
         };
 
