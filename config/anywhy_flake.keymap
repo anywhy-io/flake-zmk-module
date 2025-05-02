@@ -144,14 +144,14 @@
             display-name = "Mod-Tap";
         };
 
-	omt: mod_tap {
+	olt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
 	    quick-tap-ms = <150>;
-            bindings = <&kp>, <&kp>;
-            display-name = "Mod-Tap";
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
         };
 
     };
