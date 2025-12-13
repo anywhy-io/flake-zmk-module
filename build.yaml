@@ -18,10 +18,10 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: anywhy_flake_left
     snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: anywhy_flake_right
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
