@@ -17,7 +17,3 @@
         zmk,studio-transports = <&studio_usb>;
     };
 };
-
-&studio_uart {
-    status = "disabled";
-};
