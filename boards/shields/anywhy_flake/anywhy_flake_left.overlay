@@ -12,6 +12,6 @@
 };
 
 /* Disable the default USB CDC console to leave only the Studio CDC interface. */
-&cdc_acm0 {
+&cdc_acm_uart0 {
     status = "disabled";
 };
