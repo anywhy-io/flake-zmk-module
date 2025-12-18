@@ -10,10 +10,3 @@
     , <&xiao_d 5 GPIO_ACTIVE_HIGH>
     ;
 };
-
-/* Force Studio to use only the USB transport to avoid extra serial ports. */
-/ {
-    chosen {
-        zmk,studio-transports = <&studio_usb>;
-    };
-};
