@@ -10,8 +10,3 @@
     , <&xiao_d 5 GPIO_ACTIVE_HIGH>
     ;
 };
-
-/* Disable the default USB CDC console to leave only the Studio CDC interface. */
-&cdc_acm_uart0 {
-    status = "disabled";
-};
